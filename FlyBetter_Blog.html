@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyBetter Website Design</title>
+    <link rel="stylesheet" href="FlyBetter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto&family=Roboto+Condensed:wght@500&family=Rubik+Lines&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="FlyBetter.html"><img src="Images/FB logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="FlyBetter.html">HOME</a></li>
+                    <li><a href="FlyBetter_About.html">ABOUT</a></li>
+                    <li><a href="FlyBetter_Service.html">SERVICE</a></li>
+                    <li><a href="FlyBetter_Blog.html">BLOG</a></li>
+                    <li><a href="FlyBetter_Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <h1>FlyBetter Blog: Soaring Through Travel Excellence</h1>
+    </section>
+
+    <!----------- blog page content --------->
+
+    <section class="blog-content">
+
+        <div class="row">
+            <div class="blog-left">
+                <img src="Images/blog.png">
+                <h2>FlyBetter Blog: Soaring Through Travel Excellence</h2>
+                <p>Welcome to the FlyBetter Blog, your passport to a world of seamless travel experiences. Dive into captivating stories, expert travel tips, and the latest updates in aviation. Whether you're a seasoned jetsetter or a first-time traveler, our blog is your go-to resource for inspiration and insights. Join us as we explore the skies, share exclusive content, and uncover the secrets to making every journey extraordinary. FlyBetter — where the adventure begins with each blog post.</p><br>
+                <p>Embark on a journey of discovery as we delve into the nuances of air travel, unveiling hidden gems in travel destinations, and decoding the art of stress-free journeys. From insider perspectives on the latest industry trends to in-depth guides that simplify your travel experience, the FlyBetter Blog is your companion for navigating the skies with confidence and style. Stay tuned for regular updates that elevate your travel IQ and immerse yourself in a world where every flight is a chapter in your own unique adventure. Join us and let your travel dreams take flight with FlyBetter.</p><br>
+                <p>As we continue this exciting voyage together, the FlyBetter Blog becomes your portal to an array of travel hacks, exclusive interviews with industry experts, and firsthand accounts of breathtaking destinations. Whether you seek travel inspiration, practical advice, or the latest updates on FlyBetter innovations, our blog is crafted to be your trusted source. Join a community of avid explorers, share your own travel tales, and let the FlyBetter Blog be the compass guiding you towards extraordinary adventures. Bon voyage!</p><br>
+                <p>In the dynamic world of FlyBetter, our blog serves as a vibrant hub where travel enthusiasts converge, and stories take flight. Explore the skies through rich narratives, expert advice, and firsthand accounts that redefine the art of travel. With every post, we invite you to join a community that shares a passion for seamless journeys, unlocking the mysteries of destinations, and embracing the thrill of exploration. From tips that elevate your travel game to captivating tales that transport you to distant lands, the FlyBetter Blog is your key to a world where the adventure never ends. Join the expedition, and let your travel narrative intertwine with the ever-growing tapestry of FlyBetter experiences.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Destination Spotlights</span>
+                    <span>7</span>
+                </div>
+                <div>
+                    <span>Travel Tips and Hacks</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Flight Updates and Innovations</span>
+                    <span>43</span>
+                </div>
+                <div>
+                    <span>User Stories and Experiences</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Exclusive Promotions</span>
+                    <span>58</span>
+                </div>
+                <div>
+                    <span>Industry Insights</span>
+                    <span>91</span>
+                </div>
+                <div>
+                    <span>Event Coverage</span>
+                    <span>36</span>
+                </div>
+                <div>
+                    <span>Behind the Scenes</span>
+                    <span>12</span>
+                </div>
+        </div>
+    </section>
+
+    <!------------Footer----------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Stay in the loop with FlyBetter by following us on our social media platforms! <br>We're excited to share updates, exclusive offers, and engaging content with our fantastic community. <br>Connect with us to be a part of our journey in revolutionizing air travel. Your support means the world to us,<br>and we can't wait to soar to new heights together!</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Kendy</p>
+    </section>
+    
+    <!-------------JavaScript for Toggle Menu------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+</html>

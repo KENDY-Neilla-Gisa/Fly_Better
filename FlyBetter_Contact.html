@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyBetter Website Design</title>
+    <link rel="stylesheet" href="FlyBetter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto&family=Roboto+Condensed:wght@500&family=Rubik+Lines&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="FlyBetter.html"><img src="Images/FB logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="FlyBetter.html">HOME</a></li>
+                    <li><a href="FlyBetter_About.html">ABOUT</a></li>
+                    <li><a href="FlyBetter_Service.html">SERVICE</a></li>
+                    <li><a href="FlyBetter_Blog.html">BLOG</a></li>
+                    <li><a href="FlyBetter_Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!------------ contact us ---------->
+
+    <section class="location">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.2613478146795!2d29.512365774725023!3d-1.600721098384363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dcf9d0b19e6ea9%3A0x3ff8eddb2e77ab88!2sRwanda%20Coding%20Academy!5e0!3m2!1sen!2srw!4v1704280909191!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>Nyabihu RN4, Ruhengeri-Gisenyi Rd, Mukamira</h5>
+                        <p>Nyabihu, Rwanda</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+250 78_ ___ ___</h5>
+                        <p>We are at your service 24/7. For customer inquiries, assistance, and support, our dedicated team is available from Monday to Saturday, 6:00 AM to 9:00 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>customerservice@flybetter.com</h5>
+                        <p>Email us at your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!------------Footer----------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Stay in the loop with FlyBetter by following us on our social media platforms! <br>We're excited to share updates, exclusive offers, and engaging content with our fantastic community. <br>Connect with us to be a part of our journey in revolutionizing air travel. Your support means the world to us,<br>and we can't wait to soar to new heights together!</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Kendy</p>
+    </section>
+    
+    <!-------------JavaScript for Toggle Menu------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+</html>
