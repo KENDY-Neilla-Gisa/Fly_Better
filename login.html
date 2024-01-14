@@ -2,15 +2,18 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page | FlyBetter</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login Page | FlyBetter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&family=Roboto&family=Roboto+Condensed:wght@500&family=Rubik+Lines&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&family=Roboto&family=Roboto+Condensed:wght@500&family=Rubik+Lines&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <section class="sub-header">
+
+    <!----------header---------->
+    
+    <section class="header">
         <nav>
             <a href="index.html"><img src="Images/FB logo.png"></a>
             <div class="nav-links" id="navLinks">
@@ -26,22 +29,23 @@
             </div>
             <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
         </nav>
-        <h1>About Us</h1>
     </section>
 
-    <!---------- about us content ----------->
+    <!------------login---------->
 
-    <section class="about-us">
-
-        <div class="row">
-            <div class="about-col">
-                <h1>FlyBetter: Where every flight becomes an exploration in seamless travel</h1>
-                <p>At FlyBetter, we transcend the ordinary, redefining air travel with a commitment to excellence. Each flight with us is an exploration in seamless travel, where comfort meets efficiency. As we soar into new horizons, we invite you to join the FlyBetter experience—where every journey is an extraordinary adventure.</p>
-                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
-            </div>
-            <div class="about-col">
-                <img src="Images/about.jpg">
-            </div>
+    <section class="login">
+        <div class="loginbox">
+            <img src="Images/avatar.jpg" class="avatar">
+            <h1>Log in</h1>
+            <form>
+                <p>Username</p>
+                <input type="text" name="" placeholder="Enter your email address">
+                <p>Password</p>
+                <input type="password" name="" placeholder="Enter your password">
+                <input type="submit" name="" value="Login"><br>
+                <a href="#">Lost your password?</a><br>
+                <a href="#">Don't have an account?</a>
+            </form>
         </div>
     </section>
 
@@ -58,7 +62,7 @@
         </div>
         <p>Made with <i class="fa-solid fa-heart"></i> by Kendy</p>
     </section>
-    
+
     <!-------------JavaScript for Toggle Menu------------>
     <script>
         var navLinks = document.getElementById("navLinks");
