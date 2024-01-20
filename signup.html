@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="x-icon" href="Images/flybetter-high-resolution-logo-white-transparent.png">
-    <title>Login Page | FlyBetter</title>
+    <title>Signup Page | FlyBetter</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,28 +32,41 @@
         </nav>
     </section>
 
-    <!------------login---------->
+    <!--------2nd section------->
 
-    <section class="login">
-        <div class="loginbox">
-            <img src="Images/avatar.jpg" class="avatar">
-            <h1>Log in</h1>
+    <section class="registration1">
+        <div class="registrationbox1">
+            <h3>Your Personal Details</h3>
             <form>
-                <p>Username</p>
-                <input type="text" name="" placeholder="Enter your email address">
-                <p>Password</p>
-                <input type="password" name="" placeholder="Enter your password">
-                <input type="submit" name="" value="Login"><br>
-                <a href="#">Lost your password?</a><br>
-                <a href="registration.html">Don't have an account?</a>
+                <input type="title" name="" placeholder="Title">
+                <div style="display: flex; gap: 20px;">
+                <input type="first name" name="" placeholder="First name">
+                <input type="middle name" name="" placeholder="Middle name (optional)">
+                <input type="last name" name="" placeholder="Last name">
+                </div>
+                <p>Your name must be entered in English as it appears on your passport.</p>
+                <p style="font-size: 15px;"><b>Date of birth</b></p>
+                <div style="display: flex; gap: 20px;">
+                <input type="date of birth" name="" placeholder="DD/MM/YYYY">
+                </div>
+                <div>
+                <p style="font-size: 15px;"><b>Gender (optional)</b></p>
+                <input type="gender" name="" placeholder="Male/Female">
+                <p style="font-size: 15px;"><b>Where do you live?</b></p>
+                <input type="residence" name="" placeholder="Country/region of residence">
+                </div>
             </form>
+            <form class="right-align">
+                <input type="submit" name="" value="Create an account">
+            </form>
+                <a href="login.html">Already have an account?</a>
         </div>
     </section>
 
     <!-------------JavaScript for Toggle Menu------------>
     <script>
         var navLinks = document.getElementById("navLinks");
-
+        
         function showMenu(){
             navLinks.style.right = "0";
         }
@@ -61,6 +74,3 @@
             navLinks.style.right = "-200px"
         }
     </script>
-
-</body>
-</html>

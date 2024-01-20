@@ -1,0 +1,100 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page | FlyBetter</title>
+    <link rel="stylesheet" href="registrationstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&family=Roboto&family=Roboto+Condensed:wght@500&family=Rubik+Lines&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section class="registration">
+        <div class="registrationbox">
+            <img src="Images/avatar.jpg" class="avatar">
+            <h2>It only takes a minute to register for your account</h2>
+            <h3>Let&rsquo;s create your credentials</h3>
+            <h4>Create an account using <br><i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-google"></i><br>or join by filling up the form below</h4>
+        </div>
+    </section>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Images/flybetter-high-resolution-logo-white-transparent.png">
+    <title>Signup Page | FlyBetter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@300&family=Roboto&family=Roboto+Condensed:wght@500&family=Rubik+Lines&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!----------header---------->
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/logo-no-background.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-user-tie"></i>&nbsp;&nbsp;Login | Sign up</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!----------Sign up---------->
+    <!---------1st section------->
+
+    <section class="registration">
+        <div class="registrationbox">
+            <img src="Images/avatar.jpg" class="avatar">
+            <h2>It only takes a minute to register for your account</h2>
+            <h3>Let&rsquo;s create your credentials</h3>
+            <p>Create an account using<br><i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-google"></i><br>or join by filling the form below</p>
+            <form>
+                <input type="text" name="" placeholder="Email address">
+                <div style="display: flex; gap: 20px;">
+                <input type="password" name="" placeholder="Type a password">
+                <input type="password" name="" placeholder="Retype password">
+                </div>
+                <div style="display: flex; gap: 20px;">
+                <input type="country code" name="" placeholder="Country code">
+                <input type="mobile number" name="" placeholder="Mobile number">
+                </div>
+            </form>
+            <form class="right-align">
+                <input type="submit" name="" value="Next">
+                <a href="signup.html">
+                <i class="fa-solid fa-caret-right"></i>
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <!-------------JavaScript for Toggle Menu------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+    
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
+</body>
+</html>
