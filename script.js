@@ -15,6 +15,6 @@ function SendMail() {
         message : document.getElementById("message").value
     }
     emailjs.send("service_kf686do", "template_doiball", params).then(function(res){
-        alert("Thanks for contacting us, email received!" + res.status);
+        alert("Thanks for contacting us, email received!"  +  res.status);
     })
 }
