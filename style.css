@@ -832,5 +832,8 @@ p{
     .registrationbox img{
         margin-top: 50px;
     }
+    .registrationbox h2{
+        font-size: 14px;
+    }
 }
 
