@@ -668,18 +668,18 @@ p{
     margin-bottom: 15px;
 }
 
-.registrationbox input[type="password"],
-.registrationbox input[type="password"],
-.registrationbox input[type="country code"],
-.registrationbox input[type="mobile number"]{
+.registrationbox input[name="password"],
+.registrationbox input[name="confirm_password"],
+.registrationbox input[name="country_code"],
+.registrationbox input[name="mobile_number"]{
     width: 50%;
 }
 
-.registrationbox input[type="text"],
-.registrationbox input[type="password"],
-.registrationbox input[type="password"],
-.registrationbox input[type="country code"],
-.registrationbox input[type="mobile number"]{
+.registrationbox input[name="email"],
+.registrationbox input[name="password"],
+.registrationbox input[name="confirm_password"],
+.registrationbox input[name="country_code"],
+.registrationbox input[name="mobile_number"]{
     border: none;
     border-bottom: 1px solid;
     background: transparent;
@@ -752,32 +752,46 @@ p{
     margin-bottom: 15px;
 }
 
-.registrationbox1 input[type="title"],
-.registrationbox1 input[type="date of birth"],
-.registrationbox1 input[type="gender"],
-.registrationbox1 input[type="residence"]{
+.registrationbox1 input[name="title"],
+.registrationbox1 input[name="dob"],
+.registrationbox1 input[name="gender"],
+.registrationbox1 input[name="residence"]{
     width: 50%;
 }
 
 
 
-.registrationbox1 input[type="first name"],
-.registrationbox1 input[type="middle name"],
-.registrationbox1 input[type="last name"]{
+.registrationbox1 input[name="first_name"],
+.registrationbox1 input[name="middle_name"],
+.registrationbox1 input[name="last_name"]{
     width: 33.3%;
 }
 
-.registrationbox1 input[type="title"],
-.registrationbox1 input[type="first name"],
-.registrationbox1 input[type="middle name"],
-.registrationbox1 input[type="last name"],
-.registrationbox1 input[type="date of birth"],
-.registrationbox1 input[type="gender"],
-.registrationbox1 input[type="residence"]{
+.registrationbox1 input[name="title"],
+.registrationbox1 input[name="first_name"],
+.registrationbox1 input[name="middle_name"],
+.registrationbox1 input[name="last_name"],
+.registrationbox1 input[name="residence"]{
     border: none;
     border-bottom: 1px solid;
     background: transparent;
     outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.registrationbox1 input[name="dob"]{
+    border: none;
+    border-bottom: 1px solid;
+    background: transparent;
+    outline: none;
+    height: 33px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.registrationbox1 input[name="gender"]{
     height: 40px;
     color: #fff;
     font-size: 16px;

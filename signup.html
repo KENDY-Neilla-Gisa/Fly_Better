@@ -37,29 +37,35 @@
     <section class="registration1">
         <div class="registrationbox1">
             <h3>Your Personal Details</h3>
-            <form>
-                <input type="title" name="" placeholder="Title">
-                <div style="display: flex; gap: 20px;">
-                <input type="first name" name="" placeholder="First name">
-                <input type="middle name" name="" placeholder="Middle name (optional)">
-                <input type="last name" name="" placeholder="Last name">
-                </div>
-                <p>Your name must be entered in English as it appears on your passport.</p>
-                <p style="font-size: 15px;"><b>Date of birth</b></p>
-                <div style="display: flex; gap: 20px;">
-                <input type="date of birth" name="" placeholder="DD/MM/YYYY">
-                </div>
-                <div>
-                <p style="font-size: 15px;"><b>Gender (optional)</b></p>
-                <input type="gender" name="" placeholder="Male/Female">
-                <p style="font-size: 15px;"><b>Where do you live?</b></p>
-                <input type="residence" name="" placeholder="Country/region of residence">
-                </div>
-            </form>
-            <form class="right-align">
-                <input type="submit" name="" value="Create an account">
-            </form>
+            <form action="register.php" method="post">
+                <form>
+                    <input type="text" name="title" placeholder="Title" required>
+                    <div style="display: flex; gap: 20px;">
+                    <input type="text" name="first_name" placeholder="First name" required>
+                    <input type="text" name="middle_name" placeholder="Middle name (optional)">
+                    <input type="text" name="last_name" placeholder="Last name" required>
+                    </div>
+                    <p>Your name must be entered in English as it appears on your passport.</p>
+                    <p style="font-size: 15px;"><b>Date of birth</b></p>
+                    <div style="display: flex; gap: 20px;">
+                    <input type="date" name="dob" placeholder="Date of Birth" required>
+                    </div>
+                    <div>
+                    <select name="gender" required>
+                        <option value="" disabled selected>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <p style="font-size: 15px;" class="residence"><b>Where do you live?</b></p>
+                    <input type="text" name="residence" placeholder="Country/region of residence">
+                    </div>
+                </form>
+                <form class="right-align">
+                    <input type="submit" name="" value="Create an account">
+                </form>
                 <a href="login.html">Already have an account?</a>
+            </form>
         </div>
     </section>
 <script src="script.js"></script>
